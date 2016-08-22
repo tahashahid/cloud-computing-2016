@@ -88,15 +88,71 @@
 //     console.log(employee.fullName);
 // }
 
-class Employee {
-    name: string;
-    static incomeTex: string;
-}
-var e = new Employee();
-Employee.incomeTex = "10";
-console.log("e", Employee.incomeTex);
+// class Employee {
+//     name: string;
+//     static incomeTex: string;
+// }
+// var e = new Employee();
+// Employee.incomeTex = "10";
+// console.log("e", Employee.incomeTex);
 
-var e1 = new Employee();
-Employee.incomeTex = "20";
-console.log("e1", Employee.incomeTex)
-console.log(Employee.incomeTex);
+// var e1 = new Employee();
+// Employee.incomeTex = "20";
+// console.log("e1", Employee.incomeTex)
+// console.log(Employee.incomeTex);
+
+// interface Human {
+//     name: string;
+//     age?: number;
+// }
+
+// interface Eat {
+//     (abc: string): void;
+// }
+
+// interface Arr {
+//     [index: number]: string;
+//     length : number
+// }
+
+// var h : Human = { name: "xyz" };
+// var e : Eat = function(abc: number){
+    
+// }
+// var arr: Arr = ["a", "b"];
+// arr.length;
+
+// var arr1 : number[];
+
+// arr1.length
+
+// interface Human {
+//     name: string;
+//     age: number;
+//     eat()
+// }
+
+// interface Employee extends Human{
+//     calcSalary();
+// }
+
+// class employee implements Employee {
+//     name: string;
+//     age: number;
+//     eat(){
+        
+//     }
+//     calcSalary(){}
+// }
+
+
+// interface Counter {
+//     (start: number): string;//Note there is no name assigned to the function signature
+//     interval: number;
+//     // reset(): void;
+// }
+
+// var c: Counter;
+// c(10);
+// c.reset();
+// c.interval = 5.0;
