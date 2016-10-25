@@ -1,0 +1,30 @@
+<ul>
+  <!--<li *ngFor="let name of names">Hello {{ name }}
+    <div>
+      <input type="text">
+      <button>add</button>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima impedit fuga corporis, repellendus voluptatibus doloribus tempora distinctio aliquid eos asperiores illum id, tempore voluptatem. Eius debitis perferendis dolore voluptas corrupti.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda impedit itaque mollitia rerum neque, quibusdam, commodi voluptas numquam aperiam molestias perspiciatis ex reprehenderit labore quod magni ipsum alias corrupti? Repudiandae!</p>    
+    </div>
+  </li>-->
+</ul>
+
+<form>
+    Name: <input type="text" #name>
+    <br>
+    Age: <input type="number" #age>
+    <br>
+    <button (click)="saveUser(name, age)">Save</button>
+</form>
+
+<app-user-item *ngFor="let user of names" [name]="user">
+</app-user-item>
+<!--
+<app-user-item [name]="1">
+</app-user-item>
+
+<app-user-item [name]="2">
+</app-user-item>
+
+<app-user-item [name]="10">
+</app-user-item>-->

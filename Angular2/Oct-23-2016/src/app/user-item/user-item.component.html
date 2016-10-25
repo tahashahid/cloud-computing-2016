@@ -1,0 +1,15 @@
+<div>
+  Name: {{name.name}}
+  <br>
+  Age: {{name.age}}
+  <!--<div>
+    <input type="text" name="name" [(ngModel)]="name.name">
+    <input type="number" name="age"  [(ngModel)]="name.age">
+  </div>-->
+  <div *ngIf="editMode">
+    <input type="text" name="name" #nameTxt>
+    <input type="number" name="age"  #ageTxt>
+  <button (click)="saveName(nameTxt, ageTxt)">save</button>
+  </div>
+  <button (click)="editName()" *ngIf="!editMode">edit</button>
+</div>
