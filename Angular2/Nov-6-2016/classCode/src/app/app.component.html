@@ -1,0 +1,49 @@
+<h1>
+  {{title}}
+</h1>
+
+<!--<div *ngIf="exp || exp1 && exp3">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nobis ab neque, veritatis culpa aspernatur dolorem nulla tempore laboriosam, earum. Pariatur autem laboriosam ipsum dignissimos veniam, soluta velit voluptatem delectus.
+</div>-->
+<!--
+<div *ngIf="exp6 == 5 && exp7 == 5">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nobis ab neque, veritatis culpa aspernatur dolorem nulla tempore laboriosam, earum. Pariatur autem laboriosam ipsum dignissimos veniam, soluta velit voluptatem delectus.
+</div>-->
+
+<!--
+<div *ngIf="experince.length">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nobis ab neque, veritatis culpa aspernatur dolorem nulla tempore laboriosam, earum. Pariatur autem laboriosam ipsum dignissimos veniam, soluta velit voluptatem delectus.
+</div>-->
+
+<!--
+<div *ngIf="myObj.display">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nobis ab neque, veritatis culpa aspernatur dolorem nulla tempore laboriosam, earum. Pariatur autem laboriosam ipsum dignissimos veniam, soluta velit voluptatem delectus.
+</div>-->
+
+<!--
+<div *ngIf="func()">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nobis ab neque, veritatis culpa aspernatur dolorem nulla tempore laboriosam, earum. Pariatur autem laboriosam ipsum dignissimos veniam, soluta velit voluptatem delectus.
+</div>-->
+<!--
+<div [style.background]="bg">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde hic magnam voluptates quaerat adipisci officiis beatae ad qui voluptas nisi modi, corrupti? Dolores quibusdam corrupti fugit ipsam ea. Totam, id?
+</div>
+
+<button (click)="changebg('red')">red</button>
+<button (click)="changebg('yellow')">yellow</button>
+<button (click)="changebg('blue')">blue</button>-->
+<!--
+<div [ngClass]="{bordered: border}">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium tempora aliquam, voluptatem earum dolores eos tenetur quidem porro, doloremque, similique nulla aut illo vitae, soluta sint praesentium accusamus iste sapiente.
+</div>-->
+
+<!--
+<div [ngClass]="{}">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium tempora aliquam, voluptatem earum dolores eos tenetur quidem porro, doloremque, similique nulla aut illo vitae, soluta sint praesentium accusamus iste sapiente.
+</div>-->
+
+<div *ngFor="let user of users; let num = index" 
+    [ngClass]="{bordered: user.selected}" 
+    (click)="user.selected = !user.selected">
+    <div NgNonBindable>{{num}} {{user.name}}</div>
+</div>

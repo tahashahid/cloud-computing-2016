@@ -1,0 +1,6 @@
+[submodule "Angular2/Nov-6-2016"]
+	path = Angular2/Nov-6-2016
+	url = E:\\Projects\\cloud-computing-2016\\Angular2\\Nov-6-2016
+[submodule "Angular2/Nov-6-2016/src"]
+	path = Angular2/Nov-6-2016/src
+	url = E:\\Projects\\cloud-computing-2016\\Angular2\\Nov-6-2016\\src
