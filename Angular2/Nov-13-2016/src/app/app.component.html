@@ -1,0 +1,23 @@
+<h1>
+  {{title}}
+</h1>
+<div style="width: 45%; border: 1px solid gray;float: left">
+  <h1>List</h1>
+  <ul>
+    <li *ngFor="let d of data; let i = index" (click)="clicked(d.id)">
+      {{d.title}}
+      <button (click)="deletePost(d.id, i)">delete</button>
+      </li>
+  </ul>
+  
+</div>
+
+<div style="width: 45%; border: 1px solid gray;float: left">
+  <h1>Selected Data</h1>
+  <div>{{selectedData | json}}</div>
+  <div *ngIf="selectedData">
+    <input type="text" [(ngModel)]="selectedData.title">
+    <button (click)="save()">save</button>
+  </div>
+</div>
+
