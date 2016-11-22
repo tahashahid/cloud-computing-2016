@@ -1,0 +1,8 @@
+<p>
+  products works!
+</p>
+
+
+<ul>
+  <li *ngFor="let p of products" [routerLink]="['product', p.sku]">{{ p.sku }}</li>
+</ul>
