@@ -24,6 +24,8 @@ const routes: Routes = [
   { path: 'contactus', redirectTo: 'contact' },
   { path: 'products', component: ProductsComponent },
   { path: 'products/product/:id', component: ProductdetailComponent },
+  // { path: 'products/product/rehan', component: ProductdetailComponent },
+  // { path: 'products/product/taha', component: ProductdetailComponent },
   { path: '**', component: PagenotexistComponent },
 ];
 

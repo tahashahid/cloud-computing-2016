@@ -10,21 +10,26 @@ import {PRODUCTS, Product, PRODUCTSHash} from '../models/products';
 })
 export class ProductdetailComponent implements OnInit {
   id : string;
-
+  num: string;
   product : Product;
 
 
   constructor(private route: ActivatedRoute) {
-     route.params.subscribe(params => { 
+     route.params.subscribe(function(params) { 
        this.id = params['id']; 
 
-      this.product = PRODUCTSHash[this.id]
+      this.product = PRODUCTSHash[this.id];
+     });
+
+       
        //console.log(PRODUCTSHash[this.id]);
       
-      });
+      );
   }
+  
 
   ngOnInit() {
+    alert(this.num);
   }
 
 }

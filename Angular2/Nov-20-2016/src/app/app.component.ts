@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Product } from './models/products'; 
+import { RouterModule, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-root',
