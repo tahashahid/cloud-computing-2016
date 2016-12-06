@@ -18,3 +18,6 @@ export var PRODUCTSHash = {};
 for(var i = 0; i < PRODUCTS.length; i++){
     PRODUCTSHash[PRODUCTS[i].sku] = PRODUCTS[i];
 }
+
+
+
