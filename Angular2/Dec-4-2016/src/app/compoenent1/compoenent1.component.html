@@ -1,0 +1,13 @@
+<h1>Calculator Service</h1>
+<input type="text" #num1>
+<input type="text" #num2>
+<button (click)="onAdd(num1.value,num2.value)">Add</button>
+<button (click)="onMultiply(num1.value,num2.value)">Multiply</button>
+<p>Result: {{result}}</p>
+
+<h1>Data service</h1>
+<button (click)= "onGetValue()">Get value </button>
+<p>Result : {{data}}</p>
+<input type="text" #newValue>
+<button (click)= "onInsert(newValue.value)">Value</button>
+
