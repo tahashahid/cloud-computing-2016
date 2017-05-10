@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="tabs">
+        first
+    </div>
+
+    <button onclick="showFirst()">first</button>
+    <button onclick="showSecond()">second</button>
+    <button onclick="showThird()">third</button>
+
+    <script>
+
+        var arr = ['first', 'second', 'third']
+        
+        function showFirst(){
+            document.getElementById('tabs').innerText = arr[0];
+        }
+        function showSecond(){
+            document.getElementById('tabs').innerText = arr[1];
+        }
+        function showThird(){
+            document.getElementById('tabs').innerText = arr[2];
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    
+
+    <!--<img src="1.jpg" onMouseover="src='2.jpg'" onmouseout="src='1.jpg'" />
+    -->
+    
+    
+    <!--<img src="button-greet.png" onClick="alert('Hello world!');">-->
+    <!--<div onclick="func1()">click</div>-->
+    <!--<button onclick="func2()">click2</button>-->
+    
+    <!--<img src="1.jpg" onMouseover="src = changeImg()" />-->
+    
+    <!--<input type="text" 
+        onFocus="this.style.backgroundColor='yellow';this.style.border='2px solid green';"
+        onblur="this.style.backgroundColor='transparent';this.style.border='1px solid black';">-->
+        <br>
+        <form onSubmit="checkAddress();">
+            Email:
+            <input type="text" id="email">
+            <input type="submit" value="Submit">
+        </form>
+
+
+    <script>
+
+        function checkAddress() {
+            var element = document.getElementById('email');
+            console.log(element);
+            if (element.value === "") {
+                element.style.border = '2px solid red';
+                alert("Email address required.");
+            }
+            return false;
+        }
+
+        // var index = 0;
+        // var imgs = ['1.jpg', '2.jpg', '3.jpg', '4.jpg']
+        // function changeImg(){
+        //     index++;
+        //     if(!imgs[index]) {
+        //         index = 0;
+        //     }
+        //     return imgs[index];
+        // }
+    
+        // function func1(){
+        //     alert('clicked 1')
+        // }
+    
+        // function func2(){
+        //     alert('clicked 2')
+        // }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="tabs">
+        <div id="first">
+            first tab
+        </div>
+        <div id="second" style="display: none">
+            second tab
+        </div>
+        <div id="third" style="display: none">
+            third tab
+        </div>
+    </div>
+
+    <button onclick="updateTab('first')">first</button>
+    <button onclick="updateTab('second')">second</button>
+    <button onclick="updateTab('third')">third</button>
+
+    <script>
+        function hideAll(){
+            document.getElementById('first').style.display = 'none';
+            document.getElementById('second').style.display = 'none';
+            document.getElementById('third').style.display = 'none';
+        }
+
+        function updateTab(id){
+            hideAll();
+            document.getElementById(id).style.display = 'block';
+        }
+
+
+        // function showFirst(){
+        //     hideAll();
+        //     document.getElementById('first').style.display = 'block';
+        // }
+        // function showSecond(){
+        //     hideAll();
+        //     document.getElementById('second').style.display = 'block';
+        // }
+        // function showThird(){
+        //     hideAll();
+        //     document.getElementById('third').style.display = 'block';
+        // }
+    </script>
+</body>
+</html>

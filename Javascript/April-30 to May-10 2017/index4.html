@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+        <div id="par"></div>
+        <ul id="list">
+
+        </ul>
+    </div>
+
+    <button onclick="addUser()">
+        add user
+    </button>
+
+    <script>
+    var str = '<h2>hello</h2>';
+    document.getElementById('par').innerText = str;
+    var collection = ['hello', 'test', 'abc'];
+    update();
+    function update(){
+        document.getElementById('list').innerHTML  = '';
+        for(var i = 0; i < collection.length; i++){
+            document.getElementById('list').innerHTML 
+                += '<li>'+collection[i]+'</li>';
+        }
+    }
+
+    function addUser(){
+        collection.push(prompt('enter user name'));
+        update();
+    }
+    </script>
+</body>
+</html>

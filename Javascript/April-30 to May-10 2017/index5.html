@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input1">
+    <input type="text" id="input2">
+
+    <button onclick="calc('+')">+</button>
+    <button onclick="calc('-')">-</button>
+    <button onclick="calc('*')">*</button>
+    <button onclick="calc('/')">/</button>
+
+    <div id="result">
+
+    </div>
+<script>
+
+    function calc(opr){
+        var value1 = document.getElementById('input1').value;
+        var value2 = document.getElementById('input2').value;
+        switch(opr){
+            case '+':
+            var result = Number(value1) + Number(value2);
+            break;
+            case '-':
+            var result = Number(value1) - Number(value2);
+            break;
+            case '*':
+            var result = Number(value1) * Number(value2);
+            break;
+            case '/':
+            var result = Number(value1) / Number(value2);
+            break;
+        }
+        
+        document.getElementById('result').innerText = result;
+
+    }
+    // function sum(){
+    //     var value1 = document.getElementById('input1').value;
+    //     var value2 = document.getElementById('input2').value;
+
+    //     var result = Number(value1) + Number(value2);
+
+    //     document.getElementById('result').innerText = result;
+    // }
+
+    // function sub(){
+    //     var value1 = document.getElementById('input1').value;
+    //     var value2 = document.getElementById('input2').value;
+
+    //     var result = Number(value1) - Number(value2);
+
+    //     document.getElementById('result').innerText = result;
+    // }
+</script>
+
+</body>
+</html>
