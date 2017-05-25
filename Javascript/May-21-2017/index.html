@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>This bed is too small.</p>
+    <div id="content">
+        <p id="abc">This bed is too big.</p>
+        <p>This bed is just right.</p>
+    </div>
+    <div id="content2">
+        <p>This bed is too big.</p>
+        <p>This bed is just right.</p>
+    </div>
+    <script>
+
+        function myFN(index){
+            alert(index)
+        }
+        var par = document.getElementById('content');
+        par = par.getElementsByTagName('p');
+        for(var i = 0; i < par.length; i ++){
+
+            par[i].innerHTML = ( i+1 ) +'. '+ par[i].innerHTML + '<button onclick="myFN(' + i + ')" >Delete</button>' ;
+            if(i % 2 == 0){
+                par[i].style.background = 'red'
+            }else{
+                par[i].style.background = 'yellow'
+            }
+        }
+        
+        // console.log(abc)
+
+        // var par = document.getElementsByTagName("p");
+        // for(var i = 0; i < par.length; i ++){
+        //     par[i].innerHTML = ( i+1 ) +'. '+ par[i].innerHTML;
+        //     if(i % 2 == 0){
+        //         par[i].style.background = 'red'
+        //     }else{
+        //         par[i].style.background = 'yellow'
+        //     }
+        // }
+        // console.log(par);
+
+        
+            // par[i].innerHTML = ( i+1 ) +'. '+ par[i].innerHTML;
+        // var a = function(){
+
+        // }
+
+        // a();
+
+        // var a = [function(){}];
+        // a[0]();
+
+    </script>
+</body>
+</html>
+
+
